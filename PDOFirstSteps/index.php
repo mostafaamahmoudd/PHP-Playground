@@ -3,7 +3,7 @@
 require 'functions.php';
 //require 'router.php';
 
-$dsn = "mysql:host=localhost;port=3306;user=root;password=M@m2492003;dbname=demo;charset=utf8mb4";
+$dsn = "mysql:host=localhost;port=3306;user=root;dbname=demo;charset=utf8mb4";
 
 $pdo = new PDO($dsn);
 
