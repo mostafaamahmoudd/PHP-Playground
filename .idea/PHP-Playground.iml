@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Automatically Redirect Back Upon Failed Validation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Build a Better Router" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Delete a note" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Extract a Form Validation Object" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Flash Old Form Data to the Session" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Introduction to Middleware" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Log In and Log Out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Make Your First Service Container" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Namespacing What, Why, How" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/One Request, One Controller" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Register a New User" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/The PRG Pattern (and Session Flashing)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Updating With PATCH Requests" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
