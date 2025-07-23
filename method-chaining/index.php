@@ -53,3 +53,21 @@ if (count($_POST) > 0) {
     $signup = new Signup('file.json', '');
     $signup->sanitize($_POST)->create()->save();
 }
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Signup</title>
+</head>
+<body>
+<form>
+    <input name="name" placeholder="name" type="text"><br>
+    <input name="password" placeholder="password" type="text"><br>
+    <input type="submit" value="signup"><br>
+</form>
+</body>
+</html>
