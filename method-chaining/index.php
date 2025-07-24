@@ -8,14 +8,14 @@ class Signup
      * @param $filename
      * @param $data
      */
-    public function __construct($filename, $data)
+    public function __construct(string $filename, array $data)
     {
         $this->filename = $filename;
         $this->data = $data;
     }
 
 
-    public function sanitize($data)
+    public function sanitize(array $data): Signup
     {
         foreach ($this->data as $key => $value) {
             $this->data[$key] = addslashes($value);
@@ -24,7 +24,7 @@ class Signup
         return $this;
     }
 
-    public function create()
+    public function create(): Signup
     {
         if (! file_exists($this->filename)) {
             file_put_contents($this->filename, "");
@@ -33,7 +33,7 @@ class Signup
         return $this;
     }
 
-    public function save()
+    public function save(): void
     {
         $oldData = file_get_contents($this->filename);
         $old = json_decode($oldData);
@@ -55,7 +55,7 @@ if (count($_POST) > 0) {
     $signup->sanitize($_POST)->create()->save();
 
     $result = $signup->read();
-    var_dump($result);
+    print_r($result);
 }
 ?>
 
