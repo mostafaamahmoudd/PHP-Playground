@@ -46,13 +46,16 @@ class Signup
 
     public function read()
     {
-
+        return file_get_contents($this->filename);
     }
 }
 
 if (count($_POST) > 0) {
     $signup = new Signup('file.json', $_POST);
     $signup->sanitize($_POST)->create()->save();
+
+    $result = $signup->read();
+    var_dump($result);
 }
 ?>
 
